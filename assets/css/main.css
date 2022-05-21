@@ -121,7 +121,7 @@ ol li {
 }
 
 .section-title-header p {
-  text: center;
+  text-align: center;
   font-weight: 400;
   line-height: 26px;
   padding-bottom: 36px;
@@ -129,7 +129,7 @@ ol li {
 
 .section-title {
   font-size: 30px;
-  color: #ffffff !important ;
+  /* color: #ffffff !important ; */
   line-height: 52px;
   font-weight: 700;
   text-align: center;
@@ -847,70 +847,6 @@ a.back-to-top:focus {
   animation-name: fadeInUpMenu;
 }
 
-/* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-  .bg-inverse {
-    background: rgb(255, 255, 255) !important;
-    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
-  }
-  .section-title {
-    color: rgb(255, 255, 255);
-  }
-  .navbar-expand-lg .navbar-brand,
-  .navbar-expand-lg .navbar-toggler {
-    margin: 0px 15px;
-  }
-  .navbar-nav {
-    padding: 5px 15px;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0px 40px;
-    color: #212121;
-  }
-  .about-text p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 991px) {
-  .bg-inverse {
-    background: #1c1c1c !important;
-    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
-  }
-  .navbar-expand-lg .navbar-brand,
-  .navbar-expand-lg .navbar-toggler {
-    margin: 0px 15px;
-  }
-  .section-title {
-    color: rgb(251, 251, 251);
-  }
-  h2.section-title.wow.fadeInUp {
-    color: aliceblue;
-  }
-  .navbar-nav {
-    padding: 5px 15px;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0px 40px;
-    color: rgb(255, 255, 255);
-  }
-
-  .about-content .about-text h2 {
-    font-size: 38px !important;
-    margin-top: 20px;
-    text-align: center;
-  }
-  .section-title {
-    font-size: 30px !important;
-  }
-  #sponsor-heading {
-    font-size: 30px !important;
-  }
-}
 
 #about {
   background: #f6f9f9;
@@ -974,6 +910,8 @@ a.back-to-top:focus {
 #prizes .event-item {
   position: relative;
 }
+
+
 
 #prizes .event-item .overlay-text {
   text-align: center;
@@ -1216,7 +1154,16 @@ h1 {
   background-attachment: fixed;
   position: relative;
 }
+#about-text .section-title-header .section-title {
+  color: rgb(255, 255, 255);
+}
 
+#prizes .section-title-header .section-title {
+  color: rgb(0, 0, 0);
+}
+#prizes .section-title-header p {
+  color: rgb(0, 0, 0);
+}
 
 #sponsors .section-title-header .section-title {
   color: rgb(255, 255, 255);
@@ -1228,6 +1175,9 @@ h1 {
 
 #sponsors .sponsors-logo a img {
   margin: 30px;
+  filter: contrast(200%);
+  filter: drop-shadow(2px 1px 6px rgb(255, 255, 255));
+
 }
 
 #sponsors .spnsors-logo:hover {
@@ -2257,6 +2207,7 @@ footer {
 
 .footer-logo {
   margin-bottom: 50px;
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -2345,14 +2296,14 @@ footer {
 ========================================================================== */
 .hero-area-bg {
   /* background: url(../img/hero-area.jpg) no-repeat; */
-  background: rgb(53, 53, 236) no-repeat;
+  background: rgb(255, 255, 255) no-repeat;
   background-size: cover;
   background-position: center center;
   height: 110vh;
 }
 
 #hero-area {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   overflow: hidden;
   position: relative;
 }
@@ -2368,13 +2319,17 @@ footer {
 }
 
 img#nav-logo {
-  width: 120px;
+  width: 150px;
   height: auto;
   padding-top: 5px;
 }
 
 #hero-area .contents {
   padding: 160px 20px 180px;
+}
+
+#hero-area .contents img{
+  width: 100%;
 }
 
 #hero-area .contents .icon {
@@ -2395,16 +2350,16 @@ img#nav-logo {
 
   margin-bottom: 22px;
   line-height: 24px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin-top: 25px;
 }
  .lastdate{
 font-style: italic;
-color: rgba(255, 255, 255, 0.666);
+color: rgba(0, 0, 0, 0.666);
 }
 
 #hero-area .contents .banner-btn {
-  margin-top: 35vh;
+  margin-top: 10vh;
 }
 
 #hero-area .contents .head-title {
@@ -2443,7 +2398,7 @@ color: rgba(255, 255, 255, 0.666);
   margin: 10px;
   width: 100px;
   padding: 15px 0;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgb(0, 0, 0);
   border-top: 5px solid var(--gammacolor);
 }
 
@@ -2478,79 +2433,14 @@ div#clock {
 #hero-image {
   display: none;
 }
-@media (max-width: 720px) {
-  .hero-area-bg {
-    /* background: url(../img/hero-area.jpg) no-repeat; */
-    background: rgb(53, 53, 236) no-repeat !important;
-    background-size: cover !important;
-    background-position: center;
-    height: 100vh;
-  }
 
-  #hero-register {
-  }
-  #hero-image {
-    display: block;
-  }
-  #hero-area .contents .banner-btn {
-    margin-top: 0px;
-  }
-}
-@media (max-width: 445px) {
-  .hero-area-bg {
-    /* background: url(../img/hero-area.jpg) no-repeat; */
-    background: rgb(53, 53, 236) no-repeat !important;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-  }
-  #hero-register {
-  }
-  #hero-image {
-    display: block;
-  }
-  #hero-area .contents .banner-btn {
-    margin-top: 0px;
-  }
-}
-@media (max-width: 768px) {
-  #count .count-wrapper {
-    margin-top: 100px;
-    top: -200px;
-    z-index: 0;
-    color: white;
-    padding-bottom: 30px;
-  }
-  #clock div {
-    width: 70px;
-    padding: 10px 0;
-    margin: 10px 8px;
-  }
-  #clock div h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  #clock div h4 {
-    font-size: 14px;
-    font-weight: 500;
-  }
-  #nav-container {
-    background: #1c1c1c;
-  }
-  .about-content ul li {
-    font-size: 17px !important;
-  }
-  .prize-desc {
-    display: block !important;
-  }
-}
 
 #last-stats {
   color: rgb(0, 0, 0);
   margin-bottom: 20px;
 }
 img#footer-logo {
-  width: 100px;
+  width: 150px;
   margin-top: 50px;
 }
 /* section#faq {
@@ -2567,6 +2457,8 @@ section#count {
   background-color: white;
  }
 
+
+
 #sponsor-heading {
   font-size: 30px;
   margin-bottom: 50px;
@@ -2579,16 +2471,13 @@ section#about {
 section#information-bar {
   background: rgb(18, 18, 18);
 }
-section#domains,
-section#prizes {
+section#domains{
   background: rgb(18, 18, 18);
 
 }
-p.wow.fadeInDown.animated,
-h2.section-title.wow.fadeInUp.animated,
-#sponsors .section-title-header {
+.section-title-header {
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 16px;
 }
 #information-bar .inforation-wrapper {
   background: rgb(18, 18, 18);
@@ -2791,4 +2680,142 @@ right connector from last child*/
 .tree li a:hover+ul::before, 
 .tree li a:hover+ul ul::before{
 	border-color:  #94a0b4;
+}
+
+
+/* MEDIA QUERIES */
+
+
+
+@media (max-width: 720px) {
+  .hero-area-bg {
+    /* background: url(../img/hero-area.jpg) no-repeat; */
+    background: rgb(255, 255, 255) no-repeat !important;
+    background-size: cover !important;
+    background-position: center;
+    height: 100vh;
+  }
+
+  #hero-register {
+  }
+  #hero-image {
+    display: block;
+  }
+  #hero-area .contents .banner-btn {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 445px) {
+  .hero-area-bg {
+    /* background: url(../img/hero-area.jpg) no-repeat; */
+    background: rgb(255, 255, 255) no-repeat !important;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  #hero-register {
+  }
+  #hero-image {
+    display: block;
+  }
+  #hero-area .contents .banner-btn {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  #count .count-wrapper {
+    margin-top: 100px;
+    top: -200px;
+    z-index: 0;
+    color: white;
+    padding-bottom: 30px;
+  }
+  #clock div {
+    width: 70px;
+    padding: 10px 0;
+    margin: 10px 8px;
+  }
+  #clock div h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  #clock div h4 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  #nav-container {
+    background: #1c1c1c;
+  }
+  .about-content ul li {
+    font-size: 17px !important;
+  }
+  .prize-desc {
+    display: block !important;
+  }
+}
+
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .bg-inverse {
+    background: rgb(255, 255, 255) !important;
+    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+  }
+  .section-title {
+    color: rgb(255, 255, 255);
+  }
+  .navbar-expand-lg .navbar-brand,
+  .navbar-expand-lg .navbar-toggler {
+    margin: 0px 15px;
+  }
+  .navbar-nav {
+    padding: 5px 15px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0px 40px;
+    color: #212121;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .bg-inverse {
+    background: #1c1c1c !important;
+    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+  }
+  .navbar-expand-lg .navbar-brand,
+  .navbar-expand-lg .navbar-toggler {
+    margin: 0px 15px;
+  }
+  .section-title {
+    color: rgb(251, 251, 251);
+  }
+  h2.section-title.wow.fadeInUp {
+    color: aliceblue;
+  }
+  .navbar-nav {
+    padding: 5px 15px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0px 40px;
+    color: rgb(255, 255, 255);
+  }
+
+  /* .about-content .about-text h2 {
+    font-size: 38px !important;
+    margin-top: 20px;
+    text-align: center;
+  } */
+  .section-title {
+    font-size: 30px !important;
+  }
+  #sponsor-heading {
+    font-size: 30px !important;
+  }
 }
