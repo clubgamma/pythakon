@@ -3,6 +3,7 @@
 :root {
   --primarycolor: #6b60ff;
   --gammacolor: #b60000;
+  --mywhite: rgb(248, 248, 248);
 }
 
 html {
@@ -210,7 +211,7 @@ ol li {
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.132);
 }
 
 .btn {
@@ -264,10 +265,14 @@ ol li {
 .about-content ul li {
   font-size: 18px;
 }
+.about-content .btncenter{
+  text-align: center;
+}
+
 .about-text p {
   font-size: 20px;
   letter-spacing: 0.5px;
-  color:rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
 }
 .btn-border {
   color: #ffffff;
@@ -848,10 +853,6 @@ a.back-to-top:focus {
 }
 
 
-#about {
-  background: #f6f9f9;
-}
-
 .about-content {
   height: 100%;
   display: table;
@@ -920,7 +921,7 @@ a.back-to-top:focus {
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.916);
+  background: rgba(0, 0, 0, 0.767);
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1036,7 +1037,7 @@ h1 {
   text-align: center;
 }
 .video-text i {
-  color: #000 !important;
+  color: rgba(255, 255, 255, 0.522) !important;
 }
 
 .video-text h4 {
@@ -1067,7 +1068,7 @@ h1 {
 
 .tb-t .tb-c button {
   background: transparent;
-  border: 2px solid rgb(232, 232, 232);
+  border: 2px solid rgba(255, 255, 255, 0.444);
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -1154,8 +1155,8 @@ h1 {
   background-attachment: fixed;
   position: relative;
 }
-#about-text .section-title-header .section-title {
-  color: rgb(255, 255, 255);
+#about .section-title-header .section-title {
+  color: rgb(0, 0, 0);
 }
 
 #prizes .section-title-header .section-title {
@@ -2214,17 +2215,17 @@ footer {
    Countdown Style Start
    ========================================================================== */
 #count {
-  background: #f6f9f9;
+  background: var(--mywhite);
 }
 
 #count .count-wrapper {
   border-radius: 4px;
-  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.08);
-  margin-bottom: -35px;
-  margin-top: -35px;
-  padding: 15px 0;
+  /* box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.08); */
+  /* margin-bottom: -35px; */
+  /* margin-top: -35px; */
+  /* padding: 15px 0; */
   position: relative;
-  top: -40px;
+  /* top: -40px; */
   z-index: 999;
   display: inline-block;
   width: 100%;
@@ -2295,11 +2296,14 @@ footer {
 3. Hero Area
 ========================================================================== */
 .hero-area-bg {
-  /* background: url(../img/hero-area.jpg) no-repeat; */
-  background: rgb(255, 255, 255) no-repeat;
+  background: url(../img/background/hero.jpg) no-repeat;
+  /* background: var(--mywhite) no-repeat; */
   background-size: cover;
   background-position: center center;
   height: 110vh;
+}
+#hero-area .contents .banner-btn {
+  margin-top: 200px;
 }
 
 #hero-area {
@@ -2325,24 +2329,17 @@ img#nav-logo {
 }
 
 #hero-area .contents {
-  padding: 160px 20px 180px;
+  /* padding: 480px 20px 180px; */
+  margin-top: 68%;
 }
 
 #hero-area .contents img{
-  width: 100%;
+  position: relative;
+  display: none;
+  
 }
 
-#hero-area .contents .icon {
-  margin-bottom: 30px;
-}
 
-#hero-area .contents .icon i {
-  background-image: linear-gradient(65deg, #0000ff 0, #00b000 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-size: 50px;
-}
 
 #hero-area .contents .banner-info {
   font-size: 18px;
@@ -2358,9 +2355,7 @@ font-style: italic;
 color: rgba(0, 0, 0, 0.666);
 }
 
-#hero-area .contents .banner-btn {
-  margin-top: 10vh;
-}
+
 
 #hero-area .contents .head-title {
   color: #000;
@@ -2419,7 +2414,8 @@ div#clock {
 
 #count .count-wrapper {
   top: -150px;
-  color: white;
+  color: var(--mywhite);
+  background:rgba(0, 0, 0, 0.052);
 }
 
 div#clock {
@@ -2465,8 +2461,8 @@ section#count {
 }
 /* Dark Theme */
 section#about {
-  background: rgb(18, 18, 18);
-  color: #000;
+  background: var(--mywhite);
+  color:rgb(0, 0, 0);
 }
 section#information-bar {
   background: rgb(18, 18, 18);
@@ -2569,7 +2565,7 @@ h2.section-title.wow.fadeInUp.animated {
 }
 
 .stylish-list{
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 li.stylish-list {
@@ -2687,47 +2683,75 @@ right connector from last child*/
 
 
 
-@media (max-width: 720px) {
+
+@media (max-width: 895px) {
   .hero-area-bg {
-    /* background: url(../img/hero-area.jpg) no-repeat; */
-    background: rgb(255, 255, 255) no-repeat !important;
+    /* background: url(../img/background/herotab.jpg) no-repeat; */
+    background: var(--mywhite) no-repeat !important;
     background-size: cover !important;
     background-position: center;
     height: 100vh;
   }
 
-  #hero-register {
+
+  #hero-area .contents img{
+    display: block;
+    position: relative;
+    width: 100%;
   }
+ 
+
+  #hero-area .contents {
+    /* padding: 480px 20px 180px; */
+    margin-top: 20%;
+  }
+
+ 
   #hero-image {
     display: block;
   }
   #hero-area .contents .banner-btn {
-    margin-top: 0px;
+    margin-top: 10vh;
+  }
+  section#about {
+    background: rgb(248, 248, 248);
+    color:rgb(0, 0, 0);
   }
 }
 @media (max-width: 445px) {
   .hero-area-bg {
-    /* background: url(../img/hero-area.jpg) no-repeat; */
+    /* background: url(../img/background/heromob.jpg) no-repeat; */
     background: rgb(255, 255, 255) no-repeat !important;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
   }
-  #hero-register {
-  }
+
+
+
   #hero-image {
     display: block;
   }
-  #hero-area .contents .banner-btn {
-    margin-top: 0px;
+  /* #hero-area .contents .banner-btn {
+    margin-top: 20vh;
+  } */
+  #hero-area .contents {
+    /* padding: 480px 20px 180px; */
+    margin-top: 30%;
+    margin-bottom: 10%;
+  }
+
+  section#about {
+    background: rgb(248, 248, 248);
+    color:rgb(0, 0, 0);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   #count .count-wrapper {
     margin-top: 100px;
     top: -200px;
     z-index: 0;
-    color: white;
+    color: var(--mywhite);
     padding-bottom: 30px;
   }
   #clock div {
@@ -2752,13 +2776,17 @@ right connector from last child*/
   .prize-desc {
     display: block !important;
   }
+  section#about {
+    background: var(--mywhite);
+    color:rgb(0, 0, 0);
+  }
 }
 
 
 /* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 720px) and (max-width: 991px) {
   .bg-inverse {
-    background: rgb(255, 255, 255) !important;
+    background: var(--mywhite) !important;
     box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
   }
   .section-title {
@@ -2794,8 +2822,8 @@ right connector from last child*/
   .section-title {
     color: rgb(251, 251, 251);
   }
-  h2.section-title.wow.fadeInUp {
-    color: aliceblue;
+  #about h2.section-title.wow.fadeInUp {
+    color: rgb(0, 0, 0);
   }
   .navbar-nav {
     padding: 5px 15px;
