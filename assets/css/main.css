@@ -125,7 +125,7 @@ ol li {
   text-align: center;
   font-weight: 400;
   line-height: 26px;
-  /* padding-bottom: 36px; */
+  padding-bottom: 36px;
 }
 
 .section-title {
@@ -1300,11 +1300,12 @@ h1 {
   font-weight: 700;
 }
 .schedule .card-header {
+   background-image: linear-gradient(65deg, var(--primarycolor) 0, var(--primarycolor) 50%);
   position: relative;
-  padding: 35px 40px 35px 224px;
+  /* padding: 35px 40px 35px 224px; */
   cursor: pointer;
   border-left: none;
-  margin-left: 110px;
+  /* margin-left: 110px; */
   width: 100%;
 }
 
@@ -1682,7 +1683,12 @@ h1 {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
 }
-
+.team-item .overlay-social-icon .social-icons li .lni-discord {
+  background: rgba(59, 89, 152, 0.7);
+}
+.team-item .overlay-social-icon .social-icons li .lni-discord:hover {
+  background: #3b5998;
+}
 .team-item .overlay-social-icon .social-icons li .lni-facebook-filled {
   background: rgba(59, 89, 152, 0.7);
 }
@@ -1713,10 +1719,6 @@ h1 {
 
 .team-item .overlay-social-icon .social-icons li .lni-pinterest:hover {
   background: #f307b8;
-}
-
-.lni-discord-original{
-  image
 }
 
 .team-item .info-text {
@@ -2015,7 +2017,7 @@ h1 {
 
 #contact-text .contact-wrapper {
   background: #000;
-  margin-bottom: 35px;
+  margin-bottom: -35px;
   margin-top: 0px;
   padding: 30px 0;
   border-radius: 4px;
@@ -2089,8 +2091,10 @@ footer {
 
 .social-icons-footer ul li {
   display: inline-block;
+} 
+.discord li img{
+  color: var(--primarycolor);
 }
-
 .social-icons-footer a {
   color: #888;
   display: inline-block;
@@ -2105,11 +2109,14 @@ footer {
   text-align: center;
   font-size: 16px;
 }
-
+.social-icons-footer .facebook a:hover {
+  border-color: var(--gammacolor);
+}
 .social-icons-footer .facebook a:hover {
   border-color: var(--gammacolor);
 }
 .social-icons-footer .facebook a i,
+.social-icons-footer .discord a i,
 .social-icons-footer .twitter a i,
 .social-icons-footer .pinterest a i {
   color: var(--primarycolor) !important;
@@ -2444,7 +2451,7 @@ div#clock {
   margin-bottom: 20px;
 }
 img#footer-logo {
-  width: 100px;
+  width: 150px;
   margin-top: 50px;
 }
 /* section#faq {
@@ -2540,7 +2547,7 @@ h3 {
 }
 section#contact-text,
 footer {
-  background: rgb(0, 0, 0);
+  background: #000;
 }
 #contact-text .contact-wrapper {
   background: #1c1c1c;
@@ -2692,68 +2699,43 @@ right connector from last child*/
 
 
 
-@media (max-width: 895px) {
+@media (max-width: 900px) {
   .hero-area-bg {
-    /* background: url(../img/background/herotab.jpg) no-repeat; */
+    /* background: url(../img/background/depstar.png) no-repeat; */
     background: var(--mywhite) no-repeat !important;
     background-size: cover !important;
     background-position: center;
-    height: 100vh;
+    /* height: 110vh; */
   }
-
-
   #hero-area .contents img{
     display: block;
-    position: relative;
+    /* position: relative; */
     width: 100%;
+    margin-top: -10px;
   }
- 
-
-  #hero-area .contents {
-    /* padding: 480px 20px 180px; */
-    margin-top: 20%;
+  #hero-area .contentsss{
+    margin-top: -550px;
+    margin-bottom: 0px;
   }
-
- 
+  #hero-area .contents .btnss{
+    margin: 2000px 0 0 0;
+  }
+  .btnss{
+    margin-top: -300px;
+  }
   #hero-image {
     display: block;
   }
   #hero-area .contents .banner-btn {
-    margin-top: 10vh;
+    margin-top: 1000px;
   }
   section#about {
     background: rgb(248, 248, 248);
     color:rgb(0, 0, 0);
   }
 }
-@media (max-width: 445px) {
-  .hero-area-bg {
-    /* background: url(../img/background/heromob.jpg) no-repeat; */
-    background: rgb(255, 255, 255) no-repeat !important;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-  }
 
 
-
-  #hero-image {
-    display: block;
-  }
-  /* #hero-area .contents .banner-btn {
-    margin-top: 20vh;
-  } */
-  #hero-area .contents {
-    /* padding: 480px 20px 180px; */
-    margin-top: 30%;
-    margin-bottom: 10%;
-  }
-
-  section#about {
-    background: rgb(248, 248, 248);
-    color:rgb(0, 0, 0);
-  }
-}
 @media (max-width: 720px) {
   #count .count-wrapper {
     margin-top: 100px;
@@ -2788,6 +2770,9 @@ right connector from last child*/
     background: var(--mywhite);
     color:rgb(0, 0, 0);
   }
+ .setss{
+   margin-top: -150px;
+ }
 }
 
 
@@ -2815,6 +2800,9 @@ right connector from last child*/
   }
   .about-text p {
     font-size: 16px;
+  }
+   .bg-imggg{
+    margin-top: -300px;
   }
 }
 
@@ -2854,14 +2842,78 @@ right connector from last child*/
   #sponsor-heading {
     font-size: 30px !important;
   }
+  .collabera {
+   
+    margin-left: -80px;
+  }
+  .collabera img{
+     width: 200px;
+  }
+   #hero-area .set{
+     margin-top: -50px;
+   }
+}
+
+
+
+
+
+
+@media (max-width:450px){
+  #hero-area .contents {
+     margin-top: -1000px;
+     
+  }
+ .setss{
+  margin-top: -1200px;
+  }
+}
+@media (max-width: 500px) {
+  .hero-area-bg {
+    background: rgb(255, 255, 255) no-repeat !important;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  #hero-image {
+    display: block;
+  }
+ 
+  #hero-area .contents {
+      margin-top: -550px;
+  }
+
+  section#about {
+    background: rgb(248, 248, 248);
+    color:rgb(0, 0, 0);
+  }
+  .schedule .card .schedule-slot-time{
+    width: 100%;
+  }
+  .set{
+    margin-top: -100px;
+  }
+  
+  
+}
+@media (max-width: 550px){
+   .set{
+     margin-top: -250px;
+   }
 }
 
 @media screen and (max-width:900px){
    .tree ul{
      display: flex;
-     
    }
    .tree{
      overflow-x: scroll;
+     scrollbar-width: none;
    }
+}
+
+@media (max-width: 1200px){
+  #hero-area .set{
+    margin-top: -184px;
+  }
 }

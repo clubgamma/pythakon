@@ -387,11 +387,15 @@
 .lni-color-pallet:before {
   content: "\e96d";
 }
+
 .lni-paint-bucket:before {
   content: "\e96e";
 }
 .lni-bulb:before {
   content: "\e96f";
+}
+.lni-discord::before {
+  content: "\ea9b";
 }
 .lni-highlight-alt:before {
   content: "\e970";
