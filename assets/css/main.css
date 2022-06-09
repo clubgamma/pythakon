@@ -980,6 +980,40 @@ a.back-to-top:focus {
 
 }
 
+	
+.ready-to-play:before {
+  content: '';
+  /* background-image: linear-gradient(0deg, #e9e9e9 0, #4d22f9 100%); */
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+}
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stop {
+  opacity: 1;
+}
+.stopfade .ready-to-play:before {
+  opacity: 1;
+}
 
 
 
@@ -2715,14 +2749,14 @@ right connector from last child*/
 
 @media (max-width: 720px) {
 
-  .ready-to-play img{
+  .ready-to-play video{
     height: 280px;
       width: 100%;
-      padding-bottom: 50px;
+      padding: 50px 0px;
   }
 
   .ready-to-play{
-    height: 100%;
+    height: 300px;
       width: 100%;
   }
 
@@ -2768,7 +2802,7 @@ right connector from last child*/
 /* only small tablets */
 @media (min-width: 720px) and (max-width: 991px) {
 
-  .ready-to-play img{
+  /* .ready-to-play img{
     height: 300px;
       width: 100%;
       padding-bottom: 50px;
@@ -2777,7 +2811,7 @@ right connector from last child*/
   .ready-to-play{
     height: 100%;
       width: 100%;
-  }
+  } */
 
   .bg-inverse {
     background: var(--mywhite) !important;
@@ -2809,7 +2843,7 @@ right connector from last child*/
 
 @media (max-width: 991px) {
 
-  .ready-to-play img{
+  /* .ready-to-play img{
     height: 350px;
       width: 100%;
       padding-bottom: 50px;
@@ -2818,7 +2852,7 @@ right connector from last child*/
   .ready-to-play{
     height: 100%;
       width: 100%;
-  }
+  } */
 
   .bg-inverse {
     background: #1c1c1c !important;
@@ -2885,16 +2919,29 @@ right connector from last child*/
 
 @media (max-width: 500px) {
 
-  .ready-to-play img{
-    height: 180px;
-      width: 100%;
-      padding-bottom: 50px;
+  #information-bar .inforation-wrapper {
+    /* background: #000; */
+
+    margin-bottom: 35px;
+    margin-top: -35px;
+    /* padding: 45px 0; */
+    position: relative;
+    top: 0px;
+    z-index: 999;
   }
 
-  .ready-to-play{
-    height: 100%;
-      width: 100%;
+
+  .ready-to-play video{
+    height: 400px;
+      width: 140%;
+    padding-bottom: 18%;
   }
+ 
+
+  .ready-to-play{
+    height: 300px;
+    width: 100%;
+  } 
 
 
   .hero-area-bg {
