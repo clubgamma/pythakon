@@ -974,8 +974,8 @@ a.back-to-top:focus {
 .ready-to-play {
   height: 460px;
   width: 100%;
-  overflow: hidden;
-  position: relative;
+  /* overflow: hidden; */
+  /* position: relative; */
   z-index: 2;
 
 }
@@ -1011,9 +1011,9 @@ video {
 .stop {
   opacity: 1;
 }
-.stopfade .ready-to-play:before {
+/* .stopfade .ready-to-play:before {
   opacity: 1;
-}
+} */
 
 
 
@@ -2749,16 +2749,9 @@ right connector from last child*/
 
 @media (max-width: 720px) {
 
-  .ready-to-play video{
-    height: 280px;
-      width: 100%;
-      padding: 50px 0px;
-  }
 
-  .ready-to-play{
-    height: 300px;
-      width: 100%;
-  }
+
+ 
 
   #count .count-wrapper {
     margin-top: 100px;
@@ -2923,7 +2916,7 @@ right connector from last child*/
     /* background: #000; */
 
     margin-bottom: 35px;
-    margin-top: -35px;
+    margin-top: 10px;
     /* padding: 45px 0; */
     position: relative;
     top: 0px;
@@ -2931,11 +2924,6 @@ right connector from last child*/
   }
 
 
-  .ready-to-play video{
-    height: 400px;
-      width: 140%;
-    padding-bottom: 18%;
-  }
  
 
   .ready-to-play{
