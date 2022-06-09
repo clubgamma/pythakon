@@ -912,6 +912,9 @@ a.back-to-top:focus {
   position: relative;
 }
 
+.img-fluid{
+  border-radius:10px;
+}
 
 
 #prizes .event-item .overlay-text {
@@ -927,6 +930,12 @@ a.back-to-top:focus {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.overlay-text .content{
+  padding: 0 5px;
+
 }
 
 #prizes .event-item .content {
@@ -968,44 +977,12 @@ a.back-to-top:focus {
   overflow: hidden;
   position: relative;
   z-index: 2;
+
 }
 
-.ready-to-play:before {
-  content: '';
-  background-image: linear-gradient(0deg, #e9e9e9 0, #4d22f9 100%);
-  position: absolute;
-  display: block;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.4;
-}
 
-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  transition: 1s opacity;
-}
 
-.stop {
-  opacity: 1;
-}
 
-.stopfade .ready-to-play:before {
-  opacity: 1;
-}
 
 h1 {
   font-size: 3rem;
@@ -2737,6 +2714,18 @@ right connector from last child*/
 
 
 @media (max-width: 720px) {
+
+  .ready-to-play img{
+    height: 280px;
+      width: 100%;
+      padding-bottom: 50px;
+  }
+
+  .ready-to-play{
+    height: 100%;
+      width: 100%;
+  }
+
   #count .count-wrapper {
     margin-top: 100px;
     top: -200px;
@@ -2778,6 +2767,18 @@ right connector from last child*/
 
 /* only small tablets */
 @media (min-width: 720px) and (max-width: 991px) {
+
+  .ready-to-play img{
+    height: 300px;
+      width: 100%;
+      padding-bottom: 50px;
+  }
+
+  .ready-to-play{
+    height: 100%;
+      width: 100%;
+  }
+
   .bg-inverse {
     background: var(--mywhite) !important;
     box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
@@ -2807,6 +2808,18 @@ right connector from last child*/
 }
 
 @media (max-width: 991px) {
+
+  .ready-to-play img{
+    height: 350px;
+      width: 100%;
+      padding-bottom: 50px;
+  }
+
+  .ready-to-play{
+    height: 100%;
+      width: 100%;
+  }
+
   .bg-inverse {
     background: #1c1c1c !important;
     box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
@@ -2867,8 +2880,23 @@ right connector from last child*/
  .setss{
   margin-top: -1200px;
   }
+    
 }
+
 @media (max-width: 500px) {
+
+  .ready-to-play img{
+    height: 180px;
+      width: 100%;
+      padding-bottom: 50px;
+  }
+
+  .ready-to-play{
+    height: 100%;
+      width: 100%;
+  }
+
+
   .hero-area-bg {
     background: rgb(255, 255, 255) no-repeat !important;
     background-size: cover;
