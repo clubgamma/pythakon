@@ -1795,7 +1795,6 @@ p {
   position: relative;
   z-index: 10;
   overflow: hidden;
-  margin-bottom: 120px;
   margin-top: -2px;
   margin-top: 120px;
 }
